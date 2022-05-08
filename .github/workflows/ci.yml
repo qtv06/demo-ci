@@ -38,8 +38,10 @@ jobs:
         run: gem install bundler:2.1.4
       - name: Bundle install
         run: bundle install --path=vendor/bundle
-      - name: Set up database schema
-        run: bin/rails db:schema:load
+      - name: Create db
+        run: rails db:create
+      - name: Migrate db
+        run: rails db:migrate
       # Add or replace test runners here
       - name: Echo test
         run: echo "Hello world!"
