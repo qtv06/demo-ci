@@ -34,6 +34,10 @@ jobs:
         with:
           ruby-version: 2.7.2
       # Add or replace database setup steps here
+      - name: Install bundler
+        run: gem install bundler:2.1.4
+      - name: Bundle install
+        run: bundle install --path=vendor/bundle
       - name: Set up database schema
         run: bin/rails db:schema:load
       # Add or replace test runners here
