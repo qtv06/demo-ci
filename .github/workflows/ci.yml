@@ -40,7 +40,7 @@ jobs:
       - name: Bundle install
         run: bundle install --path=vendor/bundle --jobs=4
       - name: Rubocop
-        run: bin/rails rubocop .
+        run: bundle exec rubocop .
   test:
     runs-on: ubuntu-latest
     services:
