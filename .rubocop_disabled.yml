@@ -1,0 +1,35 @@
+Style/MutableConstant:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/MethodDefParentheses:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+
+Layout/ArrayAlignment:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Lint/MissingSuper:
+  Enabled: false
+
+RSpec/MessageChain:
+  Enabled: false
