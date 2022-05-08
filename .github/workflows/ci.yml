@@ -39,9 +39,9 @@ jobs:
       - name: Bundle install
         run: bundle install --path=vendor/bundle
       - name: Create db
-        run: rails db:create
+        run: bin/rails db:create
       - name: Migrate db
-        run: rails db:migrate
+        run: bin/rails db:migrate
       # Add or replace test runners here
       - name: Echo test
         run: echo "Hello world!"
