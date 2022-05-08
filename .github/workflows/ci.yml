@@ -32,7 +32,6 @@ jobs:
       - name: Install Ruby and gems
         uses: actions/setup-ruby@v1 # v1.92
         with:
-          bundler-cache: true
           ruby-version: 2.7
       # Add or replace database setup steps here
       - name: Set up database schema
